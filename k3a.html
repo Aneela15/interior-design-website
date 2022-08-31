@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>K3a</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine"/>
+<script src="https://kit.fontawesome.com/2af445a7b6.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+  <style>
+    body{
+      width:90%;
+      overflow-x: hidden;
+      background-image:linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.9));
+    }
+    #lf{
+      width:45%;
+      float:left;
+      padding-top:120px;
+      padding-left:50px;
+    }
+    #rt{
+      width:45%;
+      float:left;
+    }
+    #lf img{
+      height:100%;
+      width:100%;
+      border-radius: 50px 10px;
+    }
+    #rt h1{
+      font-family:'Tangerine',serif;
+      font-size: 50px;
+      text-align:center;
+      padding-left: 140px;
+      padding-top:30px;
+      word-spacing: 9px;
+      color:white;
+      line-height: 70px;
+    }
+    #rt p{
+       font-family:'Tangerine',serif;color:white;
+       font-size:35px;word-spacing:2px;
+       padding-left:170px;
+       padding-top:30px;
+    }
+
+    .glow-on-hover {
+        width: 220px;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        margin-left:280px;
+        margin-top:30px;
+    }
+
+    .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    .glow-on-hover:active {
+        color: #000
+    }
+
+    .glow-on-hover:active:after {
+        background: transparent;
+    }
+
+    .glow-on-hover:hover:before {
+        opacity: 1;
+    }
+
+    .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+
+    @keyframes glowing {
+        0% { background-position: 0 0; }
+        50% { background-position: 400% 0; }
+        100% { background-position: 0 0; }
+    }
+
+  </style>
+  </head>
+  <body>
+    <div id="lf">
+      <img src="k3a.jpg"/>
+      </div>
+      <div id="rt">
+
+         <h1>Trooper Blue L-Shaped Modular Kitchen</h1>
+    <p>
+
+    The trooper blue used in this kitchen is a statement <br />
+    colour that may not be for the average homeowner. <br />
+    Not only will the bold choice make your kitchen <br />
+    one-of-a-kind, but it will also make it a delightful <br />
+    space to cook in. The grey dado is a pleasing <br />
+    combination with the blue. What's more? The high-<br />
+    gloss finish makes cleaning a breeze. This kitchen<br />
+    comprises of base units and wall units<br />
+
+
+    </p>
+
+
+    <button class="glow-on-hover" type="button">PURCHASE NOW</button>
+
+        </div>
+    </body>
+</html>
